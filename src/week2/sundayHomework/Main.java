@@ -11,7 +11,7 @@ public class Main {
 		apple.stockControl();
 		pear.stockControl();
 
-		//Manav'dan online alışveris yapılıyor. Musteri 1 kg elma, 2 kg armut almak istedi.
+		//Manavdan online alışveris yapılıyor. Musteri 1 kg elma, 2 kg armut almak istedi.
 		apple.sales(1);
 		pear.sales(2);
 

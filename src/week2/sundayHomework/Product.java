@@ -36,7 +36,6 @@ public class Product {
 	public void setQuantity(int quantity) {
 
 	}
-
 	
 	public void sales(int orderQuantity) {
 		if (orderQuantity > this.quantity) {
