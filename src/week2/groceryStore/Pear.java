@@ -1,4 +1,4 @@
-package week2.sundayHomework;
+package week2.groceryStore;
 
 public class Pear extends Product {
 
