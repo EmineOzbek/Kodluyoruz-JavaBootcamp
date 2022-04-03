@@ -1,9 +1,9 @@
 # Kodluyoruz-JavaBootcamp
-[Manav Dükkanı](https://github.com/EmineOzbek/Kodluyoruz-JavaBootcamp/tree/master/src/week2/sundayHomework) <br/>
+[Manav Dükkanı](https://github.com/EmineOzbek/Kodluyoruz-JavaBootcamp/tree/master/src/week2/groceryStore) <br/>
 [Öğrenci Numaralarını Listeleme](https://github.com/EmineOzbek/Kodluyoruz-JavaBootcamp/tree/master/src/week2/saturdayHomework)
 
 
-## Manav Dükkanı
+## [Manav Dükkanı](https://github.com/EmineOzbek/Kodluyoruz-JavaBootcamp/tree/master/src/week2/groceryStore) <br/>
 • Manav dükkanı açmak isteyen bir adam halden bir miktar elma, bir miktar armut, bir miktar kiraz alacaktır. <br/>
 • Mallar dükkana gelmiştir. Kullanıcı bu malları ayrı odalarda saklayacaktır. <br/>
 • Her bir odadaki elma, armut ve kirazın kg cinsinden değerini bulalım. <br/>
