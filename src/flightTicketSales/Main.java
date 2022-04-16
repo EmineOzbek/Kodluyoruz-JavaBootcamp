@@ -33,8 +33,8 @@ public class Main {
 		capacityManager.setPegasus(pegasus);
 		capacityManager.setAnadoluJet(anadoluJet);
 
-		TicketManager ticketManager = new TicketManager(passengerManager, capacityManager);
-		InternationalFlightManager internationalFlightManager = new InternationalFlightManager(pegasus);
+		InternationalFlightManager internationalFlightManager = new InternationalFlightManager();
+		TicketManager ticketManager = new TicketManager(passengerManager, capacityManager, internationalFlightManager);
 
 		Scanner input = new Scanner(System.in);
 		System.out.println(
@@ -42,11 +42,9 @@ public class Main {
 		String planeCompany = input.nextLine();
 
 		if (planeCompany.equalsIgnoreCase("T")) {
-			ticketManager.takeTicket(thy, 1);
+			ticketManager.takeTicket(thy, 3);
 		} else if (planeCompany.equalsIgnoreCase("P")) {
 			ticketManager.takeTicket(pegasus, 1);
-			internationalFlightManager.foodChoice(pegasus);
-
 		} else if (planeCompany.equalsIgnoreCase("A")) {
 			ticketManager.takeTicket(anadoluJet, 1);
 		}

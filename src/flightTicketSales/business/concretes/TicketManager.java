@@ -10,11 +10,14 @@ public class TicketManager implements TicketService {
 
 	private PassengerManager passengerManager;
 	private CapacityManager capacityManager;
+	private InternationalFlightManager internationalFlightManager;
 
-	public TicketManager(PassengerManager passengerManager, CapacityManager capacityManager) {
+	public TicketManager(PassengerManager passengerManager, CapacityManager capacityManager,
+			InternationalFlightManager internationalFlightManager) {
 		super();
 		this.passengerManager = passengerManager;
 		this.capacityManager = capacityManager;
+		this.internationalFlightManager = internationalFlightManager;
 	}
 
 	@Override
@@ -23,8 +26,10 @@ public class TicketManager implements TicketService {
 		if (capacityManager.getThy().getCapacity() >= passengerCount) {
 			takeTicketFare = plane.getFare() * passengerCount;
 			if (passengerManager.isCurrentPassengerBusiness(plane)) {
+				internationalFlightManager.foodChoice(plane);
 				takeTicketFare += businessFare;
 			}
+
 			System.out.println("Tebrikler, bilet satin alma isleminiz tamamlandı.");
 			System.out.println("Tutar: " + takeTicketFare);
 

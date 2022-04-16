@@ -2,9 +2,18 @@ package flightTicketSales.entities;
 
 public abstract class Plane {
 
+	private String companyName;
 	private int passengerCount;
 	private int capacity;
 	private int fare;
+
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
 
 	public int getPassengerCount() {
 		return passengerCount;
