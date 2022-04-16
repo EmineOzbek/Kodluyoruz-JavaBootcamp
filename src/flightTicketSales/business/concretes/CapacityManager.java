@@ -3,22 +3,20 @@ package flightTicketSales.business.concretes;
 import flightTicketSales.business.abstracts.CapacityService;
 import flightTicketSales.entities.AnadoluJet;
 import flightTicketSales.entities.Pegasus;
+import flightTicketSales.entities.Plane;
 import flightTicketSales.entities.THY;
 
-public class CapacityManager implements CapacityService{
+public class CapacityManager implements CapacityService {
 
 	private THY thy;
 	private Pegasus pegasus;
 	private AnadoluJet anadoluJet;
 
-	public CapacityManager(THY thy, Pegasus pegasus, AnadoluJet anadoluJet) {
+	public CapacityManager() {
 		super();
-		this.thy = thy;
-		this.pegasus = pegasus;
-		this.anadoluJet = anadoluJet;
 	}
 
-	public CapacityManager() {
+	public CapacityManager(Plane plane) {
 		super();
 	}
 
@@ -26,23 +24,23 @@ public class CapacityManager implements CapacityService{
 		return thy;
 	}
 
-	public void setThy(THY thy) {
-		this.thy = thy;
+	public void setThy(Plane thy) {
+		this.thy = (THY) thy;
 	}
 
 	public Pegasus getPegasus() {
 		return pegasus;
 	}
 
-	public void setPegasus(Pegasus pegasus) {
-		this.pegasus = pegasus;
+	public void setPegasus(Plane pegasus) {
+		this.pegasus = (Pegasus) pegasus;
 	}
 
 	public AnadoluJet getAnadoluJet() {
 		return anadoluJet;
 	}
 
-	public void setAnadoluJet(AnadoluJet anadoluJet) {
-		this.anadoluJet = anadoluJet;
+	public void setAnadoluJet(Plane anadoluJet) {
+		this.anadoluJet = (AnadoluJet) anadoluJet;
 	}
 }

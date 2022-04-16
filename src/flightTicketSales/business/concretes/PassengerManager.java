@@ -12,14 +12,11 @@ public class PassengerManager implements PassengerService {
 	private Pegasus pegasus;
 	private AnadoluJet anadoluJet;
 
-	public PassengerManager(THY thy, Pegasus pegasus, AnadoluJet anadoluJet) {
+	public PassengerManager() {
 		super();
-		this.thy = thy;
-		this.pegasus = pegasus;
-		this.anadoluJet = anadoluJet;
 	}
 
-	public PassengerManager() {
+	public PassengerManager(Plane plane) {
 		super();
 	}
 
