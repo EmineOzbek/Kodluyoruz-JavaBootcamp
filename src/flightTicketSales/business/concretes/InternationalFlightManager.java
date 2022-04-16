@@ -13,7 +13,7 @@ public class InternationalFlightManager implements InternationalFlightService {
 	}
 
 	@Override
-	public void foodChoice() {
+	public void foodChoice(Plane plane) {
 		System.out.println("Pegasus yurtdisi ucuslarinda et ikraminda bulunur.");
 	}
 
@@ -24,5 +24,7 @@ public class InternationalFlightManager implements InternationalFlightService {
 	public void setPegasus(Plane pegasus) {
 		this.pegasus = (Pegasus) pegasus;
 	}
+
+
 
 }

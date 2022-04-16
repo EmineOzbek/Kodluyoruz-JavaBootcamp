@@ -45,7 +45,7 @@ public class Main {
 			ticketManager.takeTicket(thy, 1);
 		} else if (planeCompany.equalsIgnoreCase("P")) {
 			ticketManager.takeTicket(pegasus, 1);
-			internationalFlightManager.foodChoice();
+			internationalFlightManager.foodChoice(pegasus);
 
 		} else if (planeCompany.equalsIgnoreCase("A")) {
 			ticketManager.takeTicket(anadoluJet, 1);
