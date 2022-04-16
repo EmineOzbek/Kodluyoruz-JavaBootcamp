@@ -2,14 +2,14 @@ package flightTicketSales.business.concretes;
 
 import flightTicketSales.business.abstracts.InternationalFlightService;
 import flightTicketSales.entities.Pegasus;
+import flightTicketSales.entities.Plane;
 
 public class InternationalFlightManager implements InternationalFlightService {
 
 	private Pegasus pegasus;
 
-	public InternationalFlightManager(Pegasus pegasus) {
+	public InternationalFlightManager(Plane plane) {
 		super();
-		this.pegasus = pegasus;
 	}
 
 	@Override
@@ -21,8 +21,8 @@ public class InternationalFlightManager implements InternationalFlightService {
 		return pegasus;
 	}
 
-	public void setPegasus(Pegasus pegasus) {
-		this.pegasus = pegasus;
+	public void setPegasus(Plane pegasus) {
+		this.pegasus = (Pegasus) pegasus;
 	}
 
 }
